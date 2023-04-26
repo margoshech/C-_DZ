@@ -60,24 +60,28 @@
 
 // В комнате может быть очень много программистов. Проверьте, что ваша программа правильно обработает все случаи, как минимум до 1000 человек.
 
-// Console.WriteLine("Введите число программистов");
-// int num = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите число программистов");
+int num = Convert.ToInt32(Console.ReadLine());
+int num2 = num;
 
-// int lastDigit = num % 10;
+int lastDigit = num % 10;
 
-// int[] mn = {2,3,4};
-// int[] excludes = {11, 12, 13, 14};
+while(num2 > 100) {
+    num2 = num2 / 10;
+}
 
-// if (lastDigit == 1 && !excludes.Contains(num))
-// {
-//     Console.WriteLine($" {num} программист");
-// }
-// else if (mn.Contains(lastDigit) && !excludes.Contains(num))
-// {
-//     Console.WriteLine($" {num} программиста");
-// }
-// else
-// {
-//     Console.WriteLine($" {num} программистов");
-// }
-//
+int[] mn = {2,3,4};
+int[] excludes = {11, 12, 13, 14};
+
+if (lastDigit == 1 && !excludes.Contains(num2))
+{
+    Console.WriteLine($"{num} программист");
+}
+else if (mn.Contains(lastDigit) && !excludes.Contains(num2))
+{
+    Console.WriteLine($"{num} программиста");
+}
+else
+{
+    Console.WriteLine($"{num} программистов");
+}
