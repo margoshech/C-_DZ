@@ -3,12 +3,12 @@
 
 // Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
 
-Console.WriteLine("Введите любое число:");
-int num = Convert.ToInt32(Console.ReadLine());
-for(int i = 1; i <= num; i++)
-{
-    Console.WriteLine($"{ Math.Pow(i, 3) }");
-}
+// Console.WriteLine("Введите любое число:");
+// int num = Convert.ToInt32(Console.ReadLine());
+// for(int i = 1; i <= num; i++)
+// {
+//     Console.WriteLine($"{ Math.Pow(i, 3) }");
+// }
 
 
 // Задача 21
@@ -50,26 +50,26 @@ for(int i = 1; i <= num; i++)
 
 // 23432 -> да
 
-// Console.WriteLine("Введите число");
-// int num = Convert.ToInt32(Console.ReadLine());
-// int numCopy = num;
-// int reverse = 0;
+Console.WriteLine("Введите число");
+int num = Convert.ToInt32(Console.ReadLine());
+int numCopy = num;
+int reverse = 0;
 
-// while (numCopy >0)
-// {
-//     int digit = numCopy % 10;
+while (numCopy >0)
+{
+    int digit = numCopy % 10;
 
-//     reverse = reverse * 10 + digit;
+    reverse = reverse * 10 + digit;
 
-//     numCopy = numCopy / 10;
+    numCopy = numCopy / 10;
 
-// }
+}
 
-// if (num == reverse)
-// {
-//     Console.WriteLine("полиндром");
-// }
-// else
-// {
-//     Console.WriteLine("не полиндром");
-// }
+if (num == reverse)
+{
+    Console.WriteLine("полиндром");
+}
+else
+{
+    Console.WriteLine("не полиндром");
+}
