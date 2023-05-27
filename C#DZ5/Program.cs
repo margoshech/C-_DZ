@@ -85,50 +85,50 @@
 
 // Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
 
-// void FillArray(double[] array)
-// {
-//     for (int i = 0; i < array.Length; i++)
-//     {
-//         array[i] = new Random().Next(-100, 100);
-//     }
-// }
+void FillArray(double[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        array[i] = new Random().Next(-100, 100);
+    }
+}
 
-// void PrintArray(double[] array)
-// {
-//     foreach (double item in array)
-//     {
-//         Console.Write($"{item} ");
-//     }
-//     System.Console.WriteLine();
-// }
+void PrintArray(double[] array)
+{
+    foreach (double item in array)
+    {
+        Console.Write($"{item} ");
+    }
+    System.Console.WriteLine();
+}
 
-// double Summa(double[] array)
-// {
-//     double sum = 0;
-//     double max = 0;
-//     double min = 0;
-//     for (int i = 0; i < array.Length; i++)
-//     {  
+double Summa(double[] array)
+{
+    double sum = 0;
+    double max = 0;
+    double min = 0;
+    for (int i = 0; i < array.Length; i++)
+    {  
 
-//         if (array[i] > max)
-//         {
-//             max = array[i];
-//         }
+        if (array[i] > max)
+        {
+            max = array[i];
+        }
         
-//         if (array[i] < min)
-//         {
-//             min = array[i];
-//         }
-//     }
+        if (array[i] < min)
+        {
+            min = array[i];
+        }
+    }
 
-//     sum = max + min;
-//     return sum;
-// }
+    sum = max + min;
+    return sum;
+}
 
 
-// double[] array = new double[4];
-// FillArray(array);
-// System.Console.WriteLine("Сгенерировался такой массив");
-// PrintArray(array);
-// System.Console.WriteLine($"Сумма нечетных чисел в массиве: {Summa(array)}");
+double[] array = new double[4];
+FillArray(array);
+System.Console.WriteLine("Сгенерировался такой массив");
+PrintArray(array);
+System.Console.WriteLine($"Сумма max , min {Summa(array)}");
 
